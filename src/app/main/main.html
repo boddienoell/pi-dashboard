@@ -1,9 +1,25 @@
+
+<div class="news">
+
+</div>
+
+<div layout="vertical" layout-fill>
+
+    <iframe type="text/html" frameborder="0" height="800" width="100%" src="http://api.bne.com/map/">
+
+    </iframe>
+</div>
+
 <div layout="vertical" layout-fill layout-padding>
 
-    <div flex="20">
-      <ds-widget-clock theme="dark" digital-format="'h:mm a'"></ds-widget-clock>
+    <div flex="10" layout layout-align="center center" layout-padding>
+        <ds-widget-clock theme="dark" digital-format="'h:mm'"></ds-widget-clock>
     </div>
-    <div flex="80">
+    <div flex="30" layout layout-align="center center" layout-padding>
+
+    </div>
+    <div flex="60">
         <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=35.9820&lon=-77.8191&name=Rocky Mount"> </iframe>
     </div>
+
 </div>
