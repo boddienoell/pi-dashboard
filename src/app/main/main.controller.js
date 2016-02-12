@@ -6,7 +6,12 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController() {
+  function MainController($interval) {
+
     var vm = this;
+
+    $interval(function(){
+      document.getElementById('forecast_embed').contentWindow.location.reload();
+    }, 3600);
   }
 })();
