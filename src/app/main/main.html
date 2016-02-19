@@ -1,25 +1,43 @@
+<div style="overflow: hidden" layout="vertical" layout-fill>
 
-<div class="news">
-
-</div>
-
-<div layout="vertical" layout-fill>
-
-    <iframe type="text/html" frameborder="0" height="800" width="100%" src="http://api.bne.com/map/">
-
-    </iframe>
+    <div flex class="map-frame">
+        <iframe type="text/html" frameborder="0" height="800" width="100%" src="http://api.bne.com/map/"></iframe>
+    </div>
 </div>
 
 <div layout="vertical" layout-fill layout-padding>
 
-    <div flex="10" layout layout-align="center center" layout-padding>
+    <div flex="20" layout layout-align="center center" layout-padding>
         <ds-widget-clock theme="dark" digital-format="'h:mm'"></ds-widget-clock>
     </div>
-    <div flex="30" layout layout-align="center center" layout-padding>
-        Version 3
+    <div flex="20" layout layout-align="center center" layout-padding>
+        <div flex="20">
+            <i class="fa fa-cutlery fa-6x" style="font-size: 80px"></i>
+        </div>
+        <div flex="80">
+                <p>Hamburger & Fries</p>
+                <p>Salad Bar</p>
+                <p>Many Other Things</p>
+        </div>
     </div>
     <div flex="60">
         <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=35.9820&lon=-77.8191&name=Rocky Mount"> </iframe>
     </div>
 
+</div>
+
+<div class="news" ng-if="main.slide > 0">
+
+    <div class="slider" ng-if="(main.slide == 1)" layout layout-align="center center">
+        <h1>Welcome to Boddie Noell</h1>
+    </div>
+    <div class="slider" ng-if="main.slide == 2" layout layout-align="center start">
+        <img width="400px" src="http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Happy-Birthday-PNG/Hanging_Colorful_Happy_Birthday_PNG_Clipart_Picture.png?m=1438293941">
+    </div>
+    <div class="slider" ng-if="main.slide == 3" layout layout-align="center center">
+        <h1>Slide 2</h1>
+    </div>
+    <div class="slider" ng-if="main.slide == 4" layout layout-align="center center" >
+        <h1>Slide 3</h1>
+    </div>
 </div>

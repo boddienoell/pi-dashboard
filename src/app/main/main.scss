@@ -1,3 +1,16 @@
 .news{
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 700px;
+  height: 475px;
+  background-color: rgba(255,255,255,.75);
+  width: 1000px;
+  padding: 50px;
+  border-radius: 10px;
+}
 
+.map-frame{
+  z-index: 1;
+  overflow: hidden;
 }
