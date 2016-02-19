@@ -22,7 +22,6 @@
 
     $interval(function(){
       var url = document.getElementById('forecast_embed').src;
-      alert('asdf');
       document.getElementById('forecast_embed').src = '';
       document.getElementById('forecast_embed').src = url;
 
